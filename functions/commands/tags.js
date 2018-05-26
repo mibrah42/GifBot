@@ -1,5 +1,6 @@
 const lib = require('lib')({token: process.env.STDLIB_TOKEN});
 const axios = require('axios');
+
 /**
 * /test
 *
@@ -19,30 +20,34 @@ const axios = require('axios');
 
 module.exports = (user, channel, text = '', command = {}, botToken = null, callback) => {
   // console.log(text);
-  axios.post('https://apiv2.indico.io/language', JSON.stringify({
+  axios.post('https://apiv2.indico.io/texttags', JSON.stringify({
     "api_key": '55dcf3395da7de03608a9721a35697ea',
     "data": text,
-    "top_n": 1
+    "threshold": 0.1,
+    "top_n": 5
   }))
   .then(function (response) {
     let js_obj = response.data.results;
-    let language;
+    let tags = [];
     for(var key in js_obj) {
-      if(js_obj.hasOwnProperty(key)) {
-        language = key;
-        break;
+      if(key.includes("_")){
+        key = key.replace("_", " ")
       }
+      tags.push(key);
     }
+    let top_tag = tags[0];
+    tags = tags.join(" - ");
+
     // console.log(response.data.results);
-    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${language}`)
+    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${top_tag}`)
     .then(function (response) {
 
       const url = response.data.data.images.fixed_height_downsampled.url;
 
       callback(null, {
-        text: `This seems like: ${language}`,
+        text: `Top tags: ${tags}`,
         attachments: [{
-          "fallback": language,
+          "fallback": top_tag,
           "image_url": url
         }
           // You can customize your messages with attachments.
@@ -57,4 +62,8 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
   .catch(function (error) {
     console.log(error);
   });
+
+
+
+
 };

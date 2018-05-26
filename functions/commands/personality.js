@@ -1,6 +1,6 @@
 const lib = require('lib')({token: process.env.STDLIB_TOKEN});
 const axios = require('axios');
-const _ = require('underscore');
+
 /**
 * /test
 *
@@ -24,44 +24,29 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
     "api_key": '55dcf3395da7de03608a9721a35697ea',
     "data": text,
     "persona": true,
-    "threshold": 0.1
+    "threshold": 0.1,
+    "top_n": 1
   }))
   .then(function (response) {
-
-    js_obj = response.data.results;
-    var firstProp;
+    let js_obj = response.data.results;
+    let personality;
     for(var key in js_obj) {
       if(js_obj.hasOwnProperty(key)) {
-        firstProp = js_obj[key];
-        firstKey = key;
+        personality = key;
         break;
       }
     }
 
-    let max = firstProp;
-    for(var key in js_obj) {
-      if(js_obj[key] > max) {
-        max = key;
-      }
-    }
-
-    if((typeof max) != "string"){
-      max = (_.invert(js_obj))[max];
-    }
-
-    console.log(max)
-
-
     // console.log(response.data.results);
-    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${max}`)
+    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${personality}`)
     .then(function (response) {
 
       const url = response.data.data.images.fixed_height_downsampled.url;
 
       callback(null, {
-        text: `Your personality trait is: ${max}`,
+        text: `Your personality trait is: ${personality}`,
         attachments: [{
-          "fallback": max,
+          "fallback": personality,
           "image_url": url
 
         }
