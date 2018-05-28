@@ -1,6 +1,6 @@
 # GifBot
 
-<p align="center"><img src="giphy.gif" alt="Smiley face" width="500"></p>
+<p align="center"><img src="giphy.gif" alt="Smiley face" width="400"></p>
 <p align="center"><i>GifBot is a Slack bot that converts sentences into GIFs based on textual queues through sentiment analysis.</i></p>
 <br>
 
@@ -45,3 +45,11 @@
 <a href="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573"><img src="https://i.gyazo.com/78b0b7b4636b1455611dcaa1becda573.gif" alt="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573" width="300"/></a>
 
 ### language
+<p>The language command takes your input text and returns the predicted language. It also returns an appropriate gif based on the output.</p>
+<p> Output of entering: </p>
+
+```
+/language Hey there, would you like to have some tea
+```
+
+<a href="https://gyazo.com/0b948b5ccfb698e7d0918c335cf81360"><img src="https://i.gyazo.com/0b948b5ccfb698e7d0918c335cf81360.gif" alt="https://gyazo.com/0b948b5ccfb698e7d0918c335cf81360" width="300"/></a>
