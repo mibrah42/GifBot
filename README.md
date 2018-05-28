@@ -5,7 +5,6 @@
 <br>
 
 ## Libraries, Tools and APIs
-<<<<<<< HEAD
 
 <li><b><a href="https://stdlib.com/">Stdlib</a></b>: Where our API is hosted</li>
 <li><b><a href="https://indico.io/">Indico</a></b>: Provides text analysis</li>
@@ -48,10 +47,7 @@
 ### language
 <p>The language command takes your input text and returns the predicted language. It also returns an appropriate gif based on the output.</p>
 <p> Output of entering: </p>
-
-```
-=======
-   
+ 
 <li><b><a href="https://stdlib.com/">Stdlib</a></b>: Where our API is hosted</li>
 <li><b><a href="https://indico.io/">Indico</a></b>: Provides text analysis</li>
 <li><b><a href="https://slack.com/">Slack</a></b>: Website where bot runs</li>
@@ -95,7 +91,6 @@
 <p> Output of entering: </p>
 
 ```
->>>>>>> 220c1b14ae474ff9435a07734b966b3c7bd4e7ec
 /language Hey there, would you like to have some tea
 ```
 
