@@ -36,7 +36,7 @@
 ### emotion
 <p>The emotion command takes your input text and returns an emotion after analyzing your sentence. It also returns an appropriate gif based on the output.</p>
 <p> Output of entering </p>
-``` 
+```
 /emotion I feel great 
 ```
 
