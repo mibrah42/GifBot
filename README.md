@@ -14,4 +14,4 @@
 <br>
 ## How it works
 <p>GifBot offers a series of commands depending on the operations you would like to perform. The list of commands are available below.</p>
-<img src="list.gif" alt="list.jpeg">
+<img src="list.jpeg" alt="list.jpeg">
