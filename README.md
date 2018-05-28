@@ -36,8 +36,10 @@
 ### emotion
 <p>The emotion command takes your input text and returns an emotion after analyzing your sentence. It also returns an appropriate gif based on the output.</p>
 <p> Output of entering </p>
-``` /emotion I feel great ```
+``` 
+/emotion I feel great 
+```
 
-<a href="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573"><img src="https://i.gyazo.com/78b0b7b4636b1455611dcaa1becda573.gif" alt="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573" width="400"/></a>
+<a href="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573"><img src="https://i.gyazo.com/78b0b7b4636b1455611dcaa1becda573.gif" alt="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573" width="300"/></a>
 
 ### language
