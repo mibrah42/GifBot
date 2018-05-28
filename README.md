@@ -13,5 +13,5 @@
 <li><b><a href="https://giphy.com/">Giphy</a></b>: Where GIFs are sourced from</li>
 <br>
 ## How it works
-GifBot offers a series of commands depending on the operations you would like to perform. The list of commands are available below.
-<img src="giphy.gif" alt="list.jpeg">
+<p>GifBot offers a series of commands depending on the operations you would like to perform. The list of commands are available below.</p>
+<img src="list.gif" alt="list.jpeg">
