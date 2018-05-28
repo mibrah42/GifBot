@@ -25,7 +25,7 @@
 ### Sentiment
 <p>The sentiment command takes your input text and returns either positve or negative based on the predicted sentiment of your sentence. It also returns an appropriate gif based on the output.</p>
 </p>Output of entering:</p>
-> /sentiment I love coding
+/sentiment I love coding
 
 <a href="https://gyazo.com/8b18bf8a55d6591d7a5f07c802f76680"><img src="https://i.gyazo.com/8b18bf8a55d6591d7a5f07c802f76680.gif" alt="https://gyazo.com/8b18bf8a55d6591d7a5f07c802f76680" width="400"/></a>
 
