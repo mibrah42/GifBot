@@ -7,7 +7,7 @@
 ## Libraries, Tools and APIs
    
 <li><b><a href="https://stdlib.com/">Stdlib</a></b>: Where our API is hosted</li>
-<li><b><a href="https://indico.io/">Indico</a></b>: Provides sentiment analysis</li>
+<li><b><a href="https://indico.io/">Indico</a></b>: Provides text analysis</li>
 <li><b><a href="https://slack.com/">Slack</a></b>: Website where bot runs</li>
 <li><b><a href="https://nodejs.org/en/">NodeJS</a></b>: Langauge bot is written in</li>
 <li><b><a href="https://giphy.com/">Giphy</a></b>: Where GIFs are sourced from</li>
@@ -25,7 +25,6 @@
 ### Sentiment
 <p>The sentiment command takes your input text and returns either positve or negative based on the predicted sentiment of your sentence. It also returns an appropriate gif based on the output.</p>
 </p>Output of entering:</p>
-
 ```
 /sentiment I love coding 
 ```
@@ -35,6 +34,10 @@
 
 
 ### emotion
-<p>The emotion command takes your input text and returns either positve or negative based on the predicted sentiment of your sentence. It also returns an appropriate gif based on the output.</p>
+<p>The emotion command takes your input text and returns an emotion after analyzing your sentence. It also returns an appropriate gif based on the output.</p>
+<p> Output of entering </p>
+``` /emotion I feel great ```
+
+<a href="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573"><img src="https://i.gyazo.com/78b0b7b4636b1455611dcaa1becda573.gif" alt="https://gyazo.com/78b0b7b4636b1455611dcaa1becda573" width="400"/></a>
 
 ### language
