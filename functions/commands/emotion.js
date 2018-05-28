@@ -1,6 +1,5 @@
 const lib = require('lib')({token: process.env.STDLIB_TOKEN});
 const axios = require('axios');
-const _ = require('underscore');
 /**
 * /test
 *
@@ -18,9 +17,8 @@ const _ = require('underscore');
 * @returns {object}
 */
 module.exports = (user, channel, text = '', command = {}, botToken = null, callback) => {
-  // console.log(text);
   axios.post('https://apiv2.indico.io/emotion', JSON.stringify({
-    "api_key": '55dcf3395da7de03608a9721a35697ea',
+    "api_key": 'YOUR_API_KEY',
     "data": text,
     "threshold": 0.1,
     "top_n": 1
@@ -34,8 +32,7 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
         break;
       }
     }
-    // console.log(response.data.results);
-    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${emotion}`)
+    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=YOUR_API_KEY&s=${emotion}`)
     .then(function (response) {
 
       const url = response.data.data.images.fixed_height_downsampled.url;

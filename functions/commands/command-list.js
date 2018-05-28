@@ -16,9 +16,14 @@ const lib = require('lib')({token: process.env.STDLIB_TOKEN});
 * @returns {object}
 */
 module.exports = (user, channel, text = '', command = {}, botToken = null, callback) => {
-  callback(null, {
+  let commands = ["/sentiment: Positive or negative vibes", "/language: Predict language used?", "/emotion: get the feels", "/personality: Personality traits", "/tags: Categories extracted from phrase", "/findgif: Simple text to Gif translation","/command-list: List commands"]
+    let final = "";
+    for(var i = 0; i < commands.length; i++){
+      final += `${commands[i]}\n`;
+    }
 
-    text: `Hello, <@${user}>...\nYou said: ${text}`,
+  callback(null, {
+    text: final,
     attachments: [
       // You can customize your messages with attachments.
       // See https://api.slack.com/docs/message-attachments for more info.

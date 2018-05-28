@@ -20,7 +20,7 @@ const axios = require('axios');
 module.exports = (user, channel, text = '', command = {}, botToken = null, callback) => {
   // console.log(text);
   axios.post('https://apiv2.indico.io/sentiment', JSON.stringify({
-    "api_key": '55dcf3395da7de03608a9721a35697ea',
+    "api_key": 'YOUR_API_KEY',
     "data": text
   }))
   .then(function (response) {
@@ -28,7 +28,7 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
     // console.log(response.data.results);
     const verdict = response.data.results >= 0.5 ? "positive" : "negative" ;
 
-    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${verdict}`)
+    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=YOUR_API_KEY&s=${verdict}`)
     .then(function (response) {
 
       const url = response.data.data.images.fixed_height_downsampled.url;

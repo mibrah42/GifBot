@@ -21,7 +21,7 @@ const axios = require('axios');
 module.exports = (user, channel, text = '', command = {}, botToken = null, callback) => {
   // console.log(text);
   axios.post('https://apiv2.indico.io/texttags', JSON.stringify({
-    "api_key": '55dcf3395da7de03608a9721a35697ea',
+    "api_key": 'YOUR_API_KEY',
     "data": text,
     "threshold": 0.1,
     "top_n": 5
@@ -39,7 +39,7 @@ module.exports = (user, channel, text = '', command = {}, botToken = null, callb
     tags = tags.join(" - ");
 
     // console.log(response.data.results);
-    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=wA4sxNNz8KQMfhxXGV2ePJWaMQkCPXzF&s=${top_tag}`)
+    axios.get(`https://api.giphy.com/v1/gifs/translate?api_key=YOUR_API_KEY&s=${top_tag}`)
     .then(function (response) {
 
       const url = response.data.data.images.fixed_height_downsampled.url;
