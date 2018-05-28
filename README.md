@@ -1,7 +1,9 @@
 # GifBot
 
 <p align="center"><img src="giphy.gif" alt="Smiley face"></p>
-<p align="center"><i>Slack bot that converts sentences into GIFs based on textual queues through sentiment analysis.</i></p>
+<p align="center"><i>GifBot is a Slack bot that converts sentences into GIFs based on textual queues through sentiment analysis.</i></p>
+<br>
+<br>
 
 ## Libraries, Tools and APIs
    
@@ -11,4 +13,4 @@
 <li><b><a href="https://nodejs.org/en/">NodeJS</a></b>: Langauge bot is written in</li>
 <li><b><a href="https://giphy.com/">Giphy</a></b>: Where GIFs are sourced from</li>
      
-
+## How it works
