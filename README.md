@@ -1,6 +1,4 @@
 
-<center>
-
     <div class="header">
         <h1>
             GifBot
@@ -36,10 +34,3 @@ Libraries, Tools and APIs
 
     </ul>  
 
-
-
-    
-
-    </center>
-  </body>
-</html>
