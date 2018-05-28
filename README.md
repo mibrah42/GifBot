@@ -12,6 +12,8 @@
 <li><b><a href="https://nodejs.org/en/">NodeJS</a></b>: Langauge bot is written in</li>
 <li><b><a href="https://giphy.com/">Giphy</a></b>: Where GIFs are sourced from</li>
 <br>
+
 ## How it works
+
 <p>GifBot offers a series of commands depending on the operations you would like to perform. The list of commands are available below.</p>
 <img src="list.jpeg" alt="list.jpeg">
