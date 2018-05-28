@@ -1,8 +1,8 @@
 # GifBot
 
-<p align="center"><img src="giphy.gif" alt="Smiley face"><center></p>
-<br>
+<p align="center"><img src="giphy.gif" alt="Smiley face"><center>
 <i>Transforming meaningful conversations into visual experiences i.e. GIFs</i>
+</p>
 
 ## Libraries, Tools and APIs
    
