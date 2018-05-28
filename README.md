@@ -25,6 +25,7 @@
 ### Sentiment
 <p>The sentiment command takes your input text and returns either positve or negative based on the predicted sentiment of your sentence. It also returns an appropriate gif based on the output.</p>
 </p>Output of entering:</p>
+
 ```
 /sentiment I love coding 
 ```
@@ -35,7 +36,8 @@
 
 ### emotion
 <p>The emotion command takes your input text and returns an emotion after analyzing your sentence. It also returns an appropriate gif based on the output.</p>
-<p> Output of entering </p>
+<p> Output of entering: </p>
+
 ```
 /emotion I feel great 
 ```
