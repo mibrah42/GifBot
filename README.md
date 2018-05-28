@@ -1,8 +1,8 @@
 # GifBot
 
 <p align="center"><img src="giphy.gif" alt="Smiley face"></p>
-<p align="center"><i>Slack bot that converts conversations into GIFs based on textual queues through sentiment analysis.</i></p>
-Gifbot is a @SlackHQ bot made with @StdLibHQ that will make your wildest memes come true. Using @indicoData to get the sentiment of a sentence, it finds the perfect gif for any situation!
+<p align="center"><i>Slack bot that converts sentences into GIFs based on textual queues through sentiment analysis.</i></p>
+
 ## Libraries, Tools and APIs
    
 <li><b><a href="https://stdlib.com/">Stdlib</a></b>: Where our API is hosted</li>
