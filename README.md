@@ -1,6 +1,6 @@
 # GifBot
 
-<center><img src="giphy.gif" alt="Smiley face"><center>
+<p align="center"><img src="giphy.gif" alt="Smiley face"><center></p>
 <br>
 <i>Transforming meaningful conversations into visual experiences i.e. GIFs</i>
 
