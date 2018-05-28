@@ -18,7 +18,14 @@
 <p>GifBot offers a series of commands depending on the operations you would like to perform. The list of commands are available below.</p>
 <img src="list.jpeg" alt="list.jpeg" width="400">
 
-<p>Performing an operation is as simple as entering:</p>
-<center>
-   <p>/command: text input</p>
-</center>
+<p>Performing an operation is as simple as entering: /command: text input</p>
+
+## Examples
+
+### Sentiment
+<p>The sentiment command takes your input text and returns either positve or negative based on the predicted sentiment of your sentence.</p>
+
+<a href="https://gyazo.com/8b18bf8a55d6591d7a5f07c802f76680"><img src="https://i.gyazo.com/8b18bf8a55d6591d7a5f07c802f76680.gif" alt="https://gyazo.com/8b18bf8a55d6591d7a5f07c802f76680" width="400"/></a>
+
+### emotion
+### language
