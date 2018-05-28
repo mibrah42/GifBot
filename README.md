@@ -44,7 +44,7 @@
 
 ### Language
 <p>The language command takes your input text and returns the predicted language. It also returns an appropriate gif based on the output.</p>
-<p> Output of entering: </p>
+<p> Output of entering:</p>
 
 ```
 /language Hey there, would you like to have some tea
