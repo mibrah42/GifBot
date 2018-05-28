@@ -5,7 +5,6 @@
 <br>
 
 ## Libraries, Tools and APIs
-
 <li><b><a href="https://stdlib.com/">Stdlib</a></b>: Where our API is hosted</li>
 <li><b><a href="https://indico.io/">Indico</a></b>: Provides text analysis</li>
 <li><b><a href="https://slack.com/">Slack</a></b>: Website where bot runs</li>
