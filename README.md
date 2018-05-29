@@ -1,7 +1,7 @@
 # GifBot
 
 <p align="center"><img src="giphy.gif" alt="Smiley face" width="400"></p>
-<p align="center"><i>GifBot is a Slack bot that converts sentences into GIFs based on textual queues through sentiment analysis.</i></p>
+<p align="center"><i>GifBot is a Slack bot that converts sentences into GIFs based on textual queues.</i></p>
 <br>
 
 ## Libraries, Tools and APIs
